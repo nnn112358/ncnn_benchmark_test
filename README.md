@@ -1,5 +1,15 @@
 # ncnn_benchmark_test
 
+### Install 
+ ```
+$ wget https://github.com/nnn112358/ncnn_benchmark_test/releases/download/benchmark_arm/benchmark_arm-linux-gnueabihf.zip
+ $ unzip benchmark_arm-linux-gnueabihf.zip
+ $ cd benchmark
+ $ chmod +x benchncnn
+ $ ./benchncnn
+```
+
+# Result 
 
 M5Stack CoreMP135
 
