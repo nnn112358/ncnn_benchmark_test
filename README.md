@@ -55,7 +55,24 @@ cooling_down = 1
              alexnet  min = 1012.00  max = 1013.54  avg = 1012.93
 Killed
 ```
+Raspberry Pi Zero 2 W
 
+```
+ $ uname -a
+Linux raspizero 6.1.21-v7+ #1642 SMP Mon Apr  3 17:20:52 BST 2023 armv7l GNU/Linux
+
+ $ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 11 (bullseye)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="11"
+VERSION="11 (bullseye)"
+VERSION_CODENAME=bullseye
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+```
 
 #Reference
 https://github.com/Tencent/ncnn/blob/master/benchmark/README.md
