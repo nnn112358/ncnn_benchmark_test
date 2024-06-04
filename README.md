@@ -88,6 +88,46 @@ cooling_down = 1
              alexnet  min = 1012.00  max = 1013.54  avg = 1012.93
 
 ```
+
+# M5Stack CoreMP135(BuildRoot)
+
+```
+# uname -a
+Linux CoreMP135 5.15.118 #1 SMP PREEMPT Wed May 15 15:34:26 CST 2024 armv7l GNU/Linux
+
+#  cat /etc/os-release
+NAME=Buildroot
+VERSION=2021.05-10169-gb885d5525a
+ID=buildroot
+VERSION_ID=2023.02.2
+PRETTY_NAME="Buildroot 2023.02.2"
+
+#  ./benchncnn 4 1 0 -1 1
+loop_count = 4
+num_threads = 1
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =  531.80  max =  532.63  avg =  532.20
+     squeezenet_int8  min =  361.08  max =  361.75  avg =  361.39
+           mobilenet  min =  932.67  max =  934.00  avg =  933.25
+      mobilenet_int8  min =  497.71  max =  498.07  avg =  497.87
+        mobilenet_v2  min =  614.77  max =  616.07  avg =  615.46
+        mobilenet_v3  min =  492.15  max =  493.12  avg =  492.77
+          shufflenet  min =  307.61  max =  308.09  avg =  307.83
+       shufflenet_v2  min =  289.53  max =  290.40  avg =  289.82
+             mnasnet  min =  603.62  max =  604.35  avg =  603.87
+     proxylessnasnet  min =  685.61  max =  686.89  avg =  686.26
+     efficientnet_b0  min = 1001.24  max = 1001.77  avg = 1001.49
+   efficientnetv2_b0  min = 1177.08  max = 1179.96  avg = 1178.58
+        regnety_400m  min =  721.99  max =  722.87  avg =  722.29
+           blazeface  min =   84.75  max =   85.43  avg =   85.08
+           googlenet  min = 1741.78  max = 1744.97  avg = 1742.84
+      googlenet_int8  min = 1090.19  max = 1091.28  avg = 1090.78
+            resnet18  min = 1568.05  max = 1569.53  avg = 1568.86
+       resnet18_int8  min =  810.82  max =  811.99  avg =  811.28
+             alexnet  min = 1006.04  max = 1007.20  avg = 1006.40
+```
 # Raspberry Pi Zero 2 W
 
 ```
