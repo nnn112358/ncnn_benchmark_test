@@ -3,7 +3,7 @@
 
 CoreMP135 :https://www.switch-science.com/products/9650  
 Raspberry Pi Zero 2 W:https://www.switch-science.com/products/7600  
-
+M5Stack UnitV2 :https://www.switch-science.com/products/7160
 
 ### Result
 
@@ -172,7 +172,7 @@ cooling_down = 1
              alexnet  min =  504.77  max =  514.60  avg =  508.30
 ```
 
-# ncnn_benchmark_test
+# M5Stack unitv2
 
 
 ```
@@ -198,8 +198,28 @@ $  cmake --build build/arm_unitv2 &&
 #### result
 
 ```
-
-
+unitv2% ./benchncnn 4 1 0 -1 1
+loop_count = 4
+num_threads = 1
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =  365.35  max =  365.64  avg =  365.53
+     squeezenet_int8  min =  252.73  max =  255.21  avg =  253.99
+           mobilenet  min =  639.05  max =  640.57  avg =  639.61
+      mobilenet_int8  min =  349.64  max =  355.12  avg =  351.51
+        mobilenet_v2  min =  430.81  max =  431.46  avg =  431.16
+        mobilenet_v3  min =  344.34  max =  344.74  avg =  344.59
+          shufflenet  min =  216.05  max =  217.20  avg =  216.51
+       shufflenet_v2  min =  200.87  max =  201.98  avg =  201.24
+             mnasnet  min =  417.98  max =  419.16  avg =  418.45
+     proxylessnasnet  min =  477.86  max =  478.22  avg =  478.11
+     efficientnet_b0  min =  699.24  max =  700.61  avg =  700.15
+   efficientnetv2_b0  min =  817.53  max =  818.71  avg =  818.04
+        regnety_400m  min =  497.26  max =  499.18  avg =  497.96
+           blazeface  min =   58.75  max =   59.24  avg =   58.91
+           googlenet  min = 1213.31  max = 1214.68  avg = 1214.04
+      googlenet_int8  min =  766.48  max =  769.59  avg =  767.95
 ```
 
 
