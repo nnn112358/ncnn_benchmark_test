@@ -45,11 +45,18 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
+```
 
+#### build ncnn 
+```
 $ wget https://github.com/nnn112358/ncnn_benchmark_test/releases/download/benchmark_arm/benchmark_arm-linux-gnueabihf.zip
 $ unzip benchmark_arm-linux-gnueabihf.zip
 $ cd benchmark
 $ chmod +x benchncnn
+```
+#### result 
+
+```
 $ ./benchncnn 4 1 0 -1 1
 loop_count = 4
 num_threads = 1
@@ -94,7 +101,19 @@ ID_LIKE=debian
 HOME_URL="http://www.raspbian.org/"
 SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
 BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+```
+#### build ncnn 
 
+```
+$ git clone https://github.com/Tencent/ncnn
+$ cd ncnn/
+$ cmake -B build/arm_raspi -DNCNN_SIMPLEOCV=ON -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=OFF -DNCNN_BUILD_EXAMPLES=OFF .
+$ cmake --build build/arm_raspi &&  cmake --install build/arm_raspi --prefix install/arm_raspi
+```
+#### result 
+
+```
+$ cd build/arm_raspi/benchmark
 $ ./benchncnn 4 1 0 -1 1
 loop_count = 4
 num_threads = 1
@@ -121,12 +140,6 @@ cooling_down = 1
        resnet18_int8  min = 1620.20  max = 1621.80  avg = 1621.00
              alexnet  min = 1750.73  max = 1752.68  avg = 1751.36
 
-
-$ git clone https://github.com/Tencent/ncnn
-$ cd ncnn/
-$ cmake -B build/arm_raspi -DNCNN_SIMPLEOCV=ON -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=OFF -DNCNN_BUILD_EXAMPLES=OFF .
-$ cmake --build build/arm_raspi &&  cmake --install build/arm_raspi --prefix install/arm_raspi
-$ cd build/arm_raspi/benchmark
 $ ./benchncnn 4 4 0 -1 1
 loop_count = 4
 num_threads = 4
@@ -152,7 +165,6 @@ cooling_down = 1
             resnet18  min =  723.13  max =  723.70  avg =  723.40
        resnet18_int8  min =  438.34  max =  438.90  avg =  438.65
              alexnet  min =  504.77  max =  514.60  avg =  508.30
-
 ```
 
 # ncnn_benchmark_test
@@ -168,14 +180,25 @@ VERSION=2020.02.8
 ID=buildroot
 VERSION_ID=2020.02.8
 PRETTY_NAME="Buildroot 2020.02.8"
+```
 
-
+#### build ncnn
+```
 $ curl -LO https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
 $ tar Jxfv gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
 $  cmake -B build/arm_unitv2 -DCMAKE_TOOLCHAIN_FILE=./toolchains/arm-linux-gnueabihf-unitv2.toolchain.cmake -DNCNN_SIMPLEOCV=ON -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=OFF -DNCNN_BUILD_EXAMPLES=OFF .
 $  cmake --build build/arm_unitv2 &&
  cmake --install build/arm_unitv2 --prefix install/arm_unitv2
+```
+#### result
 
 ```
-#Reference
+
+
+```
+
+
+
+
+# Reference
 https://github.com/Tencent/ncnn/blob/master/benchmark/README.md
