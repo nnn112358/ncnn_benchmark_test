@@ -7,8 +7,9 @@ M5Stack UnitV2 :https://www.switch-science.com/products/7160
 
 # Result
 
-|| CoreMP135(debian)|RasPiZero 2 W|RasPiZero 2 W |
+|| CoreMP135|RasPiZero 2 W|RasPiZero 2 W |
 | ------------- | ------------- |------------- |------------- |
+||debian|Raspbian |←|
 ||  single-task| single-task|  multi-task(4thread)|
 |squeezenet|535.62|940.61|272.91|
 |squeezenet_int8|365.35|690.35|206.68|
@@ -218,6 +219,31 @@ cooling_down = 1
            blazeface  min =   58.75  max =   59.24  avg =   58.91
            googlenet  min = 1213.31  max = 1214.68  avg = 1214.04
       googlenet_int8  min =  766.48  max =  769.59  avg =  767.95
+
+unitv2% ./benchncnn 4 2 0 -1 1
+loop_count = 4
+num_threads = 2
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =  207.65  max =  208.47  avg =  208.12
+     squeezenet_int8  min =  149.00  max =  149.16  avg =  149.10
+           mobilenet  min =  348.22  max =  351.24  avg =  349.23
+      mobilenet_int8  min =  182.69  max =  182.96  avg =  182.88
+        mobilenet_v2  min =  254.54  max =  270.19  avg =  258.93
+        mobilenet_v3  min =  203.12  max =  203.81  avg =  203.37
+          shufflenet  min =  136.41  max =  136.70  avg =  136.56
+       shufflenet_v2  min =  126.79  max =  152.76  avg =  133.42
+             mnasnet  min =  242.26  max =  243.36  avg =  242.58
+     proxylessnasnet  min =  270.56  max =  272.37  avg =  271.54
+     efficientnet_b0  min =  388.31  max =  389.73  avg =  388.85
+   efficientnetv2_b0  min =  446.40  max =  448.80  avg =  447.12
+        regnety_400m  min =  286.05  max =  286.55  avg =  286.31
+           blazeface  min =   36.10  max =   36.31  avg =   36.18
+           googlenet  min =  655.90  max =  658.45  avg =  656.65
+      googlenet_int8  min =  424.22  max =  426.86  avg =  424.95
+
+
 ```
 
 
