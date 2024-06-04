@@ -27,15 +27,6 @@
 
 
 
-### Install 
- ```
-$ wget https://github.com/nnn112358/ncnn_benchmark_test/releases/download/benchmark_arm/benchmark_arm-linux-gnueabihf.zip
- $ unzip benchmark_arm-linux-gnueabihf.zip
- $ cd benchmark
- $ chmod +x benchncnn
- $ ./benchncnn
-```
-
 # Result 
 
 M5Stack CoreMP135
@@ -55,6 +46,10 @@ HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 
+$ wget https://github.com/nnn112358/ncnn_benchmark_test/releases/download/benchmark_arm/benchmark_arm-linux-gnueabihf.zip
+$ unzip benchmark_arm-linux-gnueabihf.zip
+$ cd benchmark
+$ chmod +x benchncnn
 $ ./benchncnn 4 1 0 -1 1
 loop_count = 4
 num_threads = 1
