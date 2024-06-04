@@ -160,5 +160,23 @@ cooling_down = 1
 
 ```
 
+# ncnn_benchmark_test
+
+
+```
+unitv2% uname -a
+Linux unitv2 4.9.84 #196 SMP PREEMPT Wed Apr 7 02:40:43 CST 2021 armv7l GNU/Linux
+
+unitv2% cat /etc/os-release
+NAME=Buildroot
+VERSION=2020.02.8
+ID=buildroot
+VERSION_ID=2020.02.8
+PRETTY_NAME="Buildroot 2020.02.8"
+
+
+
+
+```
 #Reference
 https://github.com/Tencent/ncnn/blob/master/benchmark/README.md
