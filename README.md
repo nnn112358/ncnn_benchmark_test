@@ -1,5 +1,10 @@
 # ncnn_benchmark_test
 
+
+CoreMP135 :https://www.switch-science.com/products/9650  
+Raspberry Pi Zero 2 W:https://www.switch-science.com/products/7600  
+
+
 ### Result
 
 || CoreMP135|RasPiZero 2 W|RasPiZero 2 W |
