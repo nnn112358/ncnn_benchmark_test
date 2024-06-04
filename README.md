@@ -7,7 +7,7 @@ Raspberry Pi Zero 2 W:https://www.switch-science.com/products/7600
 
 ### Result
 
-|| CoreMP135|RasPiZero 2 W|RasPiZero 2 W |
+|| CoreMP135(debian)|RasPiZero 2 W|RasPiZero 2 W |
 | ------------- | ------------- |------------- |------------- |
 ||  single-task| single-task|  multi-task(4thread)|
 |squeezenet|535.62|940.61|272.91|
