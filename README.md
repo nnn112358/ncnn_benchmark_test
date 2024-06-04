@@ -5,6 +5,30 @@
 ![image](https://github.com/nnn112358/ncnn_benchmark_test/assets/27625496/b474dd3b-6394-4f55-bc64-2ac12b86d664)
 
 
+|| CoreMP135|RasPiZero 2 W|RasPiZero 2 W |
+| ------------- | ------------- |------------- |------------- |
+||  single-task| single-task|  multi-task(4thread)|
+|squeezenet|535.62|940.61|272.91|
+|squeezenet_int8|365.35|690.35|206.68|
+|mobilenet|940.21|1763.62|470.97|
+|mobilenet_int8|500.01|1271.59|326.97|
+|mobilenet_v2|619.26|1094.86|315.5|
+|mobilenet_v3|497.38|890.25|281.08|
+|shufflenet|311.66|529.56|195.5|
+|shufflenet_v2|293.22|502.05|160.13|
+|mnasnet|608.54|1073.42|305.64|
+|proxylessnasnet|691.34|1191.08|414.99|
+|efficientnet_b0|1016.16|1860.9|542.05|
+|efficientnetv2_b0|1189.88|2171.53|598.09|
+|regnety_400m|730.86|1329.18|458.83|
+|blazeface|86.86|140.97|48.51|
+|googlenet|1754.33|3320.41|908.63|
+|googlenet_int8|1103.19|2208.91|628.92|
+|resnet18|1582.5|2633.43|723.4|
+|resnet18_int8|820.28|1621|438.65|
+|alexnet|1012.93|1751.36|508.3|
+|
+
 
 ### Install 
  ```
