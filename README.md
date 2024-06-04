@@ -83,6 +83,34 @@ Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 10.2.1 20210110 (Raspbian 10.2.1-6+rpi1)
 
+
+$ ./benchncnn 4 1 0 -1 1
+loop_count = 4
+num_threads = 1
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =  938.66  max =  945.04  avg =  940.61
+     squeezenet_int8  min =  690.06  max =  690.78  avg =  690.35
+           mobilenet  min = 1762.97  max = 1764.23  avg = 1763.62
+      mobilenet_int8  min = 1271.40  max = 1271.81  avg = 1271.59
+        mobilenet_v2  min = 1093.92  max = 1095.76  avg = 1094.86
+        mobilenet_v3  min =  889.74  max =  891.29  avg =  890.25
+          shufflenet  min =  529.11  max =  530.60  avg =  529.56
+       shufflenet_v2  min =  501.60  max =  502.76  avg =  502.05
+             mnasnet  min = 1072.78  max = 1074.21  avg = 1073.42
+     proxylessnasnet  min = 1190.77  max = 1191.60  avg = 1191.08
+     efficientnet_b0  min = 1860.71  max = 1860.98  avg = 1860.90
+   efficientnetv2_b0  min = 2171.31  max = 2171.81  avg = 2171.53
+        regnety_400m  min = 1328.42  max = 1330.83  avg = 1329.18
+           blazeface  min =  140.93  max =  140.99  avg =  140.97
+           googlenet  min = 3319.30  max = 3321.45  avg = 3320.41
+      googlenet_int8  min = 2208.13  max = 2209.77  avg = 2208.91
+            resnet18  min = 2632.64  max = 2634.94  avg = 2633.43
+       resnet18_int8  min = 1620.20  max = 1621.80  avg = 1621.00
+             alexnet  min = 1750.73  max = 1752.68  avg = 1751.36
+
+
 ```
 
 #Reference
