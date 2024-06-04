@@ -105,6 +105,12 @@ cooling_down = 1
        resnet18_int8  min = 1620.20  max = 1621.80  avg = 1621.00
              alexnet  min = 1750.73  max = 1752.68  avg = 1751.36
 
+
+$ git clone https://github.com/Tencent/ncnn
+$ cd ncnn/
+$ cmake -B build/arm_raspi -DNCNN_SIMPLEOCV=ON -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=OFF -DNCNN_BUILD_EXAMPLES=OFF .
+$ cmake --build build/arm_raspi &&  cmake --install build/arm_raspi --prefix install/arm_raspi
+$ cd build/arm_raspi/benchmark
 $ ./benchncnn 4 4 0 -1 1
 loop_count = 4
 num_threads = 4
