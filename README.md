@@ -175,7 +175,11 @@ VERSION_ID=2020.02.8
 PRETTY_NAME="Buildroot 2020.02.8"
 
 
-
+$ curl -LO https://developer.arm.com/-/media/Files/downloads/gnu-a/10.2-2020.11/binrel/gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
+$ tar Jxfv gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf.tar.xz
+$  cmake -B build/arm_unitv2 -DCMAKE_TOOLCHAIN_FILE=./toolchains/arm-linux-gnueabihf-unitv2.toolchain.cmake -DNCNN_SIMPLEOCV=ON -DCMAKE_BUILD_TYPE=Release -DNCNN_VULKAN=OFF -DNCNN_BUILD_EXAMPLES=OFF .
+$  cmake --build build/arm_unitv2 &&
+ cmake --install build/arm_unitv2 --prefix install/arm_unitv2
 
 ```
 #Reference
