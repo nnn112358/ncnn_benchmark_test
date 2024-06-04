@@ -110,6 +110,31 @@ cooling_down = 1
        resnet18_int8  min = 1620.20  max = 1621.80  avg = 1621.00
              alexnet  min = 1750.73  max = 1752.68  avg = 1751.36
 
+$ ./benchncnn 4 4 0 -1 1
+loop_count = 4
+num_threads = 4
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =  272.60  max =  273.21  avg =  272.91
+     squeezenet_int8  min =  206.47  max =  207.07  avg =  206.68
+           mobilenet  min =  470.76  max =  471.19  avg =  470.97
+      mobilenet_int8  min =  326.04  max =  329.53  avg =  326.97
+        mobilenet_v2  min =  315.18  max =  315.64  avg =  315.50
+        mobilenet_v3  min =  280.67  max =  282.22  avg =  281.08
+          shufflenet  min =  195.33  max =  195.85  avg =  195.50
+       shufflenet_v2  min =  159.98  max =  160.32  avg =  160.13
+             mnasnet  min =  305.17  max =  305.94  avg =  305.64
+     proxylessnasnet  min =  414.62  max =  415.66  avg =  414.99
+     efficientnet_b0  min =  541.81  max =  542.51  avg =  542.05
+   efficientnetv2_b0  min =  597.78  max =  598.76  avg =  598.09
+        regnety_400m  min =  458.66  max =  459.02  avg =  458.83
+           blazeface  min =   48.32  max =   48.62  avg =   48.51
+           googlenet  min =  908.36  max =  909.12  avg =  908.63
+      googlenet_int8  min =  628.26  max =  630.62  avg =  628.92
+            resnet18  min =  723.13  max =  723.70  avg =  723.40
+       resnet18_int8  min =  438.34  max =  438.90  avg =  438.65
+             alexnet  min =  504.77  max =  514.60  avg =  508.30
 
 ```
 
