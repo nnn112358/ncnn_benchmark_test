@@ -5,7 +5,7 @@ CoreMP135 :https://www.switch-science.com/products/9650
 Raspberry Pi Zero 2 W:https://www.switch-science.com/products/7600  
 M5Stack UnitV2 :https://www.switch-science.com/products/7160
 
-### Result
+# Result
 
 || CoreMP135(debian)|RasPiZero 2 W|RasPiZero 2 W |
 | ------------- | ------------- |------------- |------------- |
@@ -32,9 +32,7 @@ M5Stack UnitV2 :https://www.switch-science.com/products/7160
 
 
 
-# Result 
-
-M5Stack CoreMP135
+# M5Stack CoreMP135(Debian)
 
 ```
 $ uname -a
@@ -89,7 +87,7 @@ cooling_down = 1
              alexnet  min = 1012.00  max = 1013.54  avg = 1012.93
 
 ```
-Raspberry Pi Zero 2 W
+# Raspberry Pi Zero 2 W
 
 ```
  $ uname -a
