@@ -2,9 +2,6 @@
 
 ### Result
 
-![image](https://github.com/nnn112358/ncnn_benchmark_test/assets/27625496/b474dd3b-6394-4f55-bc64-2ac12b86d664)
-
-
 || CoreMP135|RasPiZero 2 W|RasPiZero 2 W |
 | ------------- | ------------- |------------- |------------- |
 ||  single-task| single-task|  multi-task(4thread)|
