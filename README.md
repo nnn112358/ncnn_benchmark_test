@@ -6,7 +6,7 @@ M5Stack UnitV2 :https://www.switch-science.com/products/7160
 
 # Result
 
-||M5 CoreMP135|RasPi Zero 2 W|RasPi Zero 2 W |M5 UnitV2|M5 UnitV2|
+||M5 CoreMP135|RasPi Zero 2 W(32Bit OS)|RasPi Zero 2 W(32Bit OS)|M5 UnitV2|M5 UnitV2|
 | ------ | -------- |------ |-- |-- |-- |
 ||  single-task| single-task|  multi-task(4thread)|single-task|  multi-task(2thread)|
 |squeezenet|535.62|940.61|272.91|365.53|208.12|
