@@ -258,6 +258,22 @@ cooling_down = 1
             resnet18  min =  311.56  max =  319.92  avg =  314.21
        resnet18_int8  min =  167.23  max =  169.53  avg =  167.99
              alexnet  min =  188.50  max =  189.31  avg =  188.94
+               vgg16  min = 73978.99  max = 82848.12  avg = 79031.31
+          vgg16_int8  min = 1361.84  max = 30602.68  avg = 14190.58
+            resnet50  min =  652.90  max = 1006.11  avg =  749.30
+       resnet50_int8  min =  442.29  max =  458.85  avg =  446.79
+      squeezenet_ssd  min =  277.98  max =  281.90  avg =  279.82
+ squeezenet_ssd_int8  min =  200.31  max =  202.15  avg =  200.98
+       mobilenet_ssd  min =  288.34  max =  291.08  avg =  289.81
+  mobilenet_ssd_int8  min =  161.44  max =  161.59  avg =  161.55
+      mobilenet_yolo  min =  596.91  max =  598.30  avg =  597.71
+  mobilenetv2_yolov3  min =  408.89  max =  411.38  avg =  409.77
+         yolov4-tiny  min =  474.56  max =  479.67  avg =  477.37
+           nanodet_m  min =  145.40  max =  146.08  avg =  145.63
+    yolo-fastest-1.1  min =   94.99  max =   95.68  avg =   95.32
+      yolo-fastestv2  min =   73.39  max =   73.75  avg =   73.60
+  vision_transformer  min = 4368.69  max = 4412.38  avg = 4396.93
+          FastestDet  min =   76.88  max =   77.24  avg =   77.09
 
 ```
 
