@@ -3,6 +3,8 @@
 [CoreMP135](M5Stack_CoreMP135.md)<br>
 [Raspberry Pi Zero 2 W](RaspberryPiZero2W.md)<br>
 [M5Stack_UnitV2](M5Stack_UnitV2.md)<br>
+[LicheeNano RV](LicheeNano_RV.md)<br>
+[Luckfox Pico Max](LuckfoxPicoMax.md)<br>
 <br>
 
 
