@@ -1,4 +1,15 @@
+# Sipeed LicheeRV Nano
 
+## nccc build 
+
+```
+export RISCV_ROOT_PATH="/home/nnn/licheerv_nano/duo-sdk/riscv64-linux-musl-x86_64/"
+cmake -B build/c906 -DCMAKE_TOOLCHAIN_FILE=../toolchains/c906-v240.toolchain.cmake -DCMAKE_BUILD_TYPE=release -DNCNN_BUILD_TESTS=ON -DNCNN_OPENMP=OFF -DNCNN_THREADS=OFF -DNCNN_RUNTIME_CPU=OFF -DNCNN_RVV=ON -DNCNN_SIMPLEOCV=ON -DNCNN_BUILD_EXAMPLES=OFF . &&
+cmake --build build/c906 &&
+cmake --install build/c906 --prefix install/c906
+```
+
+# Spec 
 ```
 # uname -m
 riscv64
@@ -71,7 +82,11 @@ tmpfs                    79.4M     84.0K     79.3M   0% /tmp
 tmpfs                    79.4M    140.0K     79.3M   0% /run
 /dev/mmcblk0p1           16.0M     10.6M      5.4M  66% /boot
 
+```
 
+# Result 
+
+```
 # ./benchncnn 4 1 0 -1 1
 loop_count = 4
 num_threads = 1
@@ -98,3 +113,10 @@ cooling_down = 1
        resnet18_int8  min = 22158.76  max = 22167.79  avg = 22161.85
 Killed
 ```
+
+
+# Reference
+
+LicheeRV-Nano-Build<br>
+https://github.com/sipeed/LicheeRV-Nano-Build<br>
+
