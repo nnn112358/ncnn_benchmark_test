@@ -82,7 +82,7 @@ cooling_down = 1
              alexnet  min =  504.77  max =  514.60  avg =  508.30
 ```
 
-# Raspberry Pi Zero 2 W (bookworm 64 Bit, + Swap 2GB)
+# Raspberry Pi Zero 2 W (bookworm 64 Bit)
 
 ```
  $ $ uname -a
