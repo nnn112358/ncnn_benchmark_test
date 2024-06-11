@@ -232,6 +232,33 @@ cooling_down = 1
       yolo-fastestv2  min =  100.92  max =  101.33  avg =  101.09
   vision_transformer  min = 14681.06  max = 14799.29  avg = 14750.90
           FastestDet  min =  111.73  max =  111.98  avg =  111.90
+
+$ ./benchncnn 4 4 0 -1 1
+loop_count = 4
+num_threads = 4
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+          squeezenet  min =   94.88  max =   95.50  avg =   95.22
+     squeezenet_int8  min =   79.35  max =   80.08  avg =   79.68
+           mobilenet  min =  127.13  max =  127.57  avg =  127.40
+      mobilenet_int8  min =   78.65  max =   78.98  avg =   78.81
+        mobilenet_v2  min =  128.54  max =  129.68  avg =  129.15
+        mobilenet_v3  min =   98.26  max =   98.43  avg =   98.33
+          shufflenet  min =   66.90  max =   67.47  avg =   67.21
+       shufflenet_v2  min =   52.32  max =   52.75  avg =   52.57
+             mnasnet  min =  111.90  max =  112.62  avg =  112.34
+     proxylessnasnet  min =  118.48  max =  119.47  avg =  118.76
+     efficientnet_b0  min =  155.56  max =  157.07  avg =  155.99
+   efficientnetv2_b0  min =  171.39  max =  172.90  avg =  172.09
+        regnety_400m  min =  135.76  max =  136.19  avg =  135.91
+           blazeface  min =   17.39  max =   17.76  avg =   17.60
+           googlenet  min =  264.43  max =  265.96  avg =  265.41
+      googlenet_int8  min =  211.98  max =  213.73  avg =  212.97
+            resnet18  min =  311.56  max =  319.92  avg =  314.21
+       resnet18_int8  min =  167.23  max =  169.53  avg =  167.99
+             alexnet  min =  188.50  max =  189.31  avg =  188.94
+
 ```
 
 
