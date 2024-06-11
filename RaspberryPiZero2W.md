@@ -278,6 +278,84 @@ cooling_down = 1
 ```
 
 
+# Raspberry Pi Zero 2 W (bookworm 32 Bit)
+
+```
+ $ uname -a
+Linux raspberrypi 6.6.20+rpt-rpi-v7 #1 SMP Raspbian 1:6.6.20-1+rpt1 (2024-03-07) armv7l GNU/Linux
+
+ $ cat /etc/os-release
+PRETTY_NAME="Raspbian GNU/Linux 12 (bookworm)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="12"
+VERSION="12 (bookworm)"
+VERSION_CODENAME=bookworm
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+```
+
+#### result 
+
+```
+$ cd build/arm_raspi/benchmark
+$ ./benchncnn 4 1 0 -1 1
+loop_count = 4
+num_threads = 1
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+
+ squeezenet  min =  215.12  max =  215.76  avg =  215.46
+     squeezenet_int8  min =  169.28  max =  169.55  avg =  169.39
+           mobilenet  min =  381.36  max =  381.92  avg =  381.65
+      mobilenet_int8  min =  266.45  max =  269.84  avg =  267.46
+        mobilenet_v2  min =  260.79  max =  261.15  avg =  260.92
+        mobilenet_v3  min =  208.19  max =  208.44  avg =  208.35
+          shufflenet  min =  126.45  max =  126.94  avg =  126.68
+       shufflenet_v2  min =  119.56  max =  119.81  avg =  119.67
+             mnasnet  min =  256.91  max =  257.33  avg =  257.12
+     proxylessnasnet  min =  315.53  max =  315.73  avg =  315.65
+     efficientnet_b0  min =  468.53  max =  468.98  avg =  468.76
+   efficientnetv2_b0  min =  521.69  max =  522.07  avg =  521.87
+        regnety_400m  min =  307.20  max =  307.49  avg =  307.38
+           blazeface  min =   38.16  max =   38.42  avg =   38.28
+           googlenet  min =  733.87  max =  734.44  avg =  734.06
+      googlenet_int8  min =  555.30  max =  555.98  avg =  555.68
+            resnet18  min =  588.02  max =  588.41  avg =  588.21
+       resnet18_int8  min =  379.75  max =  380.83  avg =  380.24
+             alexnet  min =  422.05  max =  422.21  avg =  422.12
+
+$ ./benchncnn 4 4 0 -1 1
+loop_count = 4
+num_threads = 4
+powersave = 0
+gpu_device = -1
+cooling_down = 1
+
+ squeezenet  min =  515.34  max =  523.56  avg =  519.15
+     squeezenet_int8  min =  595.14  max =  597.77  avg =  595.86
+           mobilenet  min =  540.93  max =  549.01  avg =  544.88
+      mobilenet_int8  min =  471.86  max =  473.80  avg =  472.89
+        mobilenet_v2  min =  757.62  max =  772.18  avg =  762.61
+        mobilenet_v3  min =  817.87  max =  822.14  avg =  819.80
+          shufflenet  min = 1255.57  max = 1263.39  avg = 1258.90
+       shufflenet_v2  min =  688.05  max =  694.61  avg =  690.80
+             mnasnet  min =  736.97  max =  738.97  avg =  738.15
+     proxylessnasnet  min =  833.13  max =  845.93  avg =  839.81
+     efficientnet_b0  min = 1243.25  max = 1252.47  avg = 1249.30
+   efficientnetv2_b0  min = 1719.35  max = 1737.65  avg = 1726.31
+        regnety_400m  min = 8589.69  max = 9061.98  avg = 8861.73
+           blazeface  min =  474.15  max =  479.61  avg =  476.83
+           googlenet  min = 1293.33  max = 1321.44  avg = 1308.79
+      googlenet_int8  min = 1528.40  max = 1533.89  avg = 1531.47
+            resnet18  min =  780.84  max =  795.86  avg =  787.20
+       resnet18_int8  min =  720.60  max =  729.06  avg =  724.30
+             alexnet  min =  205.29  max =  446.61  avg =  334.87
+
+
 
 
 
