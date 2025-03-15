@@ -1,0 +1,42 @@
+(myenv) nnn@raspi5:~/benchmark_aarch64$ ./benchncnn
+loop_count = 4
+num_threads = 4
+powersave = 2
+gpu_device = -1
+cooling_down = 1
+
+          squeezenet  min =    6.64  max =    6.71  avg =    6.67
+     squeezenet_int8  min =    7.78  max =    7.90  avg =    7.83
+           mobilenet  min =    9.58  max =    9.71  avg =    9.62
+      mobilenet_int8  min =    7.93  max =    9.12  avg =    8.82
+        mobilenet_v2  min =    8.90  max =   10.43  avg =    9.69
+        mobilenet_v3  min =    6.68  max =    8.14  avg =    7.25
+          shufflenet  min =    5.42  max =    5.45  avg =    5.43
+       shufflenet_v2  min =    4.43  max =    4.45  avg =    4.44
+             mnasnet  min =    7.75  max =    7.79  avg =    7.77
+     proxylessnasnet  min =    8.26  max =    8.33  avg =    8.28
+     efficientnet_b0  min =   10.60  max =   30.55  avg =   20.63
+   efficientnetv2_b0  min =   12.28  max =   12.44  avg =   12.36
+        regnety_400m  min =    9.08  max =    9.16  avg =    9.13
+           blazeface  min =    2.10  max =    2.13  avg =    2.11
+           googlenet  min =   21.69  max =   21.77  avg =   21.74
+      googlenet_int8  min =   20.45  max =   20.58  avg =   20.51
+            resnet18  min =   17.63  max =   17.75  avg =   17.69
+       resnet18_int8  min =   13.83  max =   14.19  avg =   14.03
+             alexnet  min =   19.11  max =   19.19  avg =   19.15
+               vgg16  min =  117.44  max =  119.26  avg =  118.12
+          vgg16_int8  min =   93.39  max =   94.12  avg =   93.64
+            resnet50  min =   41.14  max =   41.40  avg =   41.27
+       resnet50_int8  min =   34.96  max =   35.36  avg =   35.12
+      squeezenet_ssd  min =   25.22  max =   25.63  avg =   25.39
+ squeezenet_ssd_int8  min =   21.61  max =   21.94  avg =   21.74
+       mobilenet_ssd  min =   20.19  max =   20.36  avg =   20.29
+  mobilenet_ssd_int8  min =   18.02  max =   18.19  avg =   18.12
+      mobilenet_yolo  min =   48.84  max =   48.95  avg =   48.88
+  mobilenetv2_yolov3  min =   32.01  max =   32.18  avg =   32.12
+         yolov4-tiny  min =   38.17  max =   38.58  avg =   38.45
+           nanodet_m  min =    9.14  max =   11.03  avg =    9.67
+    yolo-fastest-1.1  min =    5.72  max =    5.74  avg =    5.73
+      yolo-fastestv2  min =    5.51  max =    5.54  avg =    5.52
+  vision_transformer  min =  559.61  max =  593.14  avg =  571.08
+          FastestDet  min =    5.50  max =    5.58  avg =    5.53
